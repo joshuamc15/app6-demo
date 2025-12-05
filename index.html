@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application 6 – Real-Time System Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Application 6: Real-Time ESP32 Demo</h1>
+
+  <p>
+    This page shows a short demo of my Application 6 project for EEL 4742C Real-Time Systems at UCF.
+    The goal of the project is to build a small real-time system on the ESP32 that reacts to inputs
+    and updates outputs on a strict schedule.
+  </p>
+
+  <h2>Video Demo</h2>
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+      title="Application 6 Demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h2>Project Overview</h2>
+  <p>
+    In this project the ESP32 runs multiple tasks that check inputs, run control logic, and update
+    outputs. The main idea is to keep the system responsive while still meeting timing deadlines.
+    From a user’s point of view, you can see [briefly say what changes: LEDs, serial output, etc.]
+    as the system reacts in real time.
+  </p>
+
+  <h2>Tech Summary</h2>
+  <ul>
+    <li>Platform: ESP32</li>
+    <li>OS: FreeRTOS</li>
+    <li>Language: C / C++</li>
+    <li>Key features: periodic tasks, interrupts, queues for communication</li>
+  </ul>
+
+  <footer>
+    © 2025 Joshua McClellan
+  </footer>
+</body>
+</html>
